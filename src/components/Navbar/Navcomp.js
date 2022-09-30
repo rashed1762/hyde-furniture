@@ -9,6 +9,7 @@ import {
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
+import img1 from '../../assests/Logo.png';
 
 
 const Navcomp = () => {
@@ -23,15 +24,15 @@ const Navcomp = () => {
             <div>
             <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home"><img className='logoimg' src={img1} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-          <NavLink><Nav.Link as={Link} to="/home"   >Home</Nav.Link></NavLink>  
-          <NavLink><Nav.Link as={Link} to="/service"   >Service</Nav.Link></NavLink> 
-          <NavLink><Nav.Link as={Link} to="/product"   >Product</Nav.Link></NavLink>  
-          <NavLink><Nav.Link as={Link} to="/blog"   >Bloc</Nav.Link></NavLink>  
-          <NavLink><Nav.Link as={Link} to="/contact"   >Contact us</Nav.Link></NavLink>  
+          <Nav className="mx-auto">
+          <NavLink><Nav.Link as={Link} className="navstyle" to="/home"   >Home</Nav.Link></NavLink>  
+          <NavLink><Nav.Link as={Link} to="/service"  className="navstyle"  >Service</Nav.Link></NavLink> 
+          <NavLink><Nav.Link as={Link} to="/product" className="navstyle"   >Product</Nav.Link></NavLink>  
+          <NavLink><Nav.Link as={Link} to="/blog" className="navstyle"   >Blog</Nav.Link></NavLink>  
+          <NavLink><Nav.Link as={Link} to="/contact"   className="navstyle"  >Contact us</Nav.Link></NavLink>  
 
             
           </Nav>
