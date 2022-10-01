@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Abyssinica+SIL&family=Dancing+Script:wght@600&family=Kanit:wght@600&family=Lobster&family=Noto+Sans+Mono:wght@300;400;800&family=Oswald:wght@300&family=Pacifico&family=Rubik+Dirt&family=Rubik+Distressed&family=Secular+One&display=swap');
+
 .bannerinfo{
     margin-top: 220px;
 }
@@ -54,3 +56,56 @@
     height: 40px;
     width: 40px;
 }
+.timerimg{
+    position: absolute;
+    margin-left: 110px;
+
+}
+.timer{
+    position: relative;
+    padding-top: 80px;
+    padding-left: 820px;
+    font-size: 40px;
+    font-family: 'Silkscreen', cursive;
+}
+.timeinfo{
+    font-size: 17px;
+    margin-left: 20px;
+}
+.timershop{
+    height: 40px;
+    font-size: 20px;
+}
+.discount{
+    color: rgb(181, 5, 5);
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+    width: 500px;
+    margin-left: 80px;
+    box-shadow: 10px 10px 20px rgb(177, 115, 244);
+}
+
+@media screen and  (max-width:980px) {
+    .banner2img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner2img{
+        width: 100%;
+    }
+    .banner2{
+        margin-right: 200px;
+    }
+    .banner2info{
+        margin-left: 90px;
+    }
+
+
+
+} 
+    
+
+

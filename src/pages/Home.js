@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import img2 from '../assests/banner (2).jpg'
 import img3 from '../assests/banner2.jpg'
+import img4 from '../assests/banner4.jpg'
 import '../components/CssFile/Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import Catagorycomp from '../components/Category/Catagorycomp';
+import Bestsalecomp from '../components/Bestsale/Bestsalecomp';
+import Timercomp from '../components/Timer/Timercomp';
 
 const Home = () => {
+    const [clockState, setClockState] = useState();
+
+  useEffect(() => {
+    setInterval(() => {
+      const date = new Date();
+      setClockState(date.toLocaleTimeString());
+    }, 1000);
+  }, []);
     return (
             <div >
             <div className='banner container-fluid'>
@@ -83,9 +94,29 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            
-            <section>
+           
+            <section className='mt-5'>
                 <Catagorycomp></Catagorycomp>
+            </section>
+
+            <section>
+                <Bestsalecomp></Bestsalecomp>
+            </section>
+
+            <section>
+                <div className='container timerimg mt-5'>
+                    <img src={img4}  style={{width:'100%' ,height:'400px'}} alt="" />
+                </div>
+                <div className='timer' >
+                    <h1 className='discount'>60%  Sale  Discount</h1>
+                    <br />
+                    <h2>Time Remaning</h2>
+                <Timercomp   duration={70*24*60*60*100}></Timercomp>
+                <p className='timeinfo'><span className='pe-3'>days</span> <span className='me-3' >Houers</span><span className='pe-3'>Minutes</span><span className='ps-1'>Seconds</span></p>
+                <button className='timershop'>shop Now</button>
+                </div>
+               
+                
             </section>
             
             </div>
