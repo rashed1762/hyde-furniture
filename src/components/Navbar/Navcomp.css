@@ -1,9 +1,50 @@
+
 .navstyle{
     text-decoration: none;
     color: blueviolet;
     font-weight: bolder;
-    margin: 8px 8px;
+    margin: 15px 15px;
+}
+.navstyle:hover{
+   color: brown;
+   border-bottom: 1px solid red;
+   
+}
+.cart-total{
+    background-color: rgb(54, 11, 229);
+    padding: 3px;
+    border-radius: 6px 2px;
+    color: aliceblue;
 }
 .logoimg{
     height: 50px;
+}
+.logout{
+    background-color: aqua;
+    width: 90px;
+    box-shadow: 5px 5px 10px grey;
+    height: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(65, 202, 31);
+    color: aliceblue;
+}
+.loginnav{
+    background-color: aqua;
+    box-shadow: 5px 5px 10px rgb(128, 128, 128);
+    width: 80px;
+    height: 27px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.loginnav:hover{
+    background-color: rgb(65, 202, 31);
+    color: aliceblue;
+}
+.iconcasrt{
+    font-size: 30px;
 }

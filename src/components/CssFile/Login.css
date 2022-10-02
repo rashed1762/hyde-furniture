@@ -1,11 +1,15 @@
+
+
 .form-container {
-    width: 600px;
+    box-shadow: 3px 3px 30px 10px rgb(111, 159, 193);
+    width: 400px;
+    height: 500px;
     margin: 0 auto;
-    border: 1px solid #95A0A7;
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .form-title {
@@ -14,29 +18,18 @@
     font-weight: 400;
 }
 
-.input-group{
-    margin-bottom: 20px;
+.email{
+    width: 320px;
+}
+.pass{
+    width: 320px;
 }
 
-.input-group label {
-    display: block;
-    margin-left: 5px;
-}
-
-.input-group input {
-    width: 415px;
-    height: 55px;
-    border: 1px solid #95A0A7;
-    box-sizing: border-box;
-    border-radius: 5px;
-    font-size: 24px;
-    padding-left: 5px;
-}
 
 .form-submit{
-    width: 415px;
-    height: 55px;
-    background-color: rgba(255, 153, 0, 0.3);
+    width: 185px;
+    height: 35px;
+    background-color: rgba(251, 108, 108, 0.3);
     border-radius: 5px;
     border: none;
     font-size: 20px;

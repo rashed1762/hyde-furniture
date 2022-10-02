@@ -1,0 +1,20 @@
+.footerstyle{
+    background-color: rgb(17, 14, 41);
+    color: white;
+}
+
+.hyde{
+    color: aqua;
+}
+.limk{
+    text-decoration: none;
+}
+.others{
+    text-align: s;
+    color: rgb(100, 11, 168);
+    font-weight: bold;
+}
+.follow{
+    padding: 5px 5px;
+    
+}

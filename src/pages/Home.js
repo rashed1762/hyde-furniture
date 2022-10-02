@@ -3,11 +3,14 @@ import img2 from '../assests/banner (2).jpg'
 import img3 from '../assests/banner2.jpg'
 import img4 from '../assests/banner4.jpg'
 import '../components/CssFile/Home.css';
+import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import Catagorycomp from '../components/Category/Catagorycomp';
 import Bestsalecomp from '../components/Bestsale/Bestsalecomp';
 import Timercomp from '../components/Timer/Timercomp';
+import { Link } from 'react-router-dom';
+import Footercomp from '../components/footer/Footercomp';
 
 const Home = () => {
     const [clockState, setClockState] = useState();
@@ -36,7 +39,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
+{/* ..................................................................................................................................... */}
             <section>
                 <div className="banner2 container  ">
                     <div className='banner21'>
@@ -95,17 +98,29 @@ const Home = () => {
                 </div>
             </section>
            
+ {/* ..............................................................................................................................................           */}
+           
+           
             <section className='mt-5'>
+                
                 <Catagorycomp></Catagorycomp>
             </section>
-
+            <hr className='container'  />
             <section>
+                <h1>Products</h1>
                 <Bestsalecomp></Bestsalecomp>
+              <Link to="/product"><Button className='showmore' variant="warning">SHOW MORE</Button>{' '}</Link>  
             </section>
+
+
+
+                <hr className='container mt-5' />
+
+{/* ........................................................................................................................................ */}
 
             <section>
                 <div className='container timerimg mt-5'>
-                    <img src={img4}  style={{width:'100%' ,height:'400px'}} alt="" />
+                    <img src={img4} className="timerimg2"  style={{width:'100%' ,height:'400px'}} alt="" />
                 </div>
                 <div className='timer' >
                     <h1 className='discount'>60%  Sale  Discount</h1>
@@ -115,10 +130,18 @@ const Home = () => {
                 <p className='timeinfo'><span className='pe-3'>days</span> <span className='me-3' >Houers</span><span className='pe-3'>Minutes</span><span className='ps-1'>Seconds</span></p>
                 <button className='timershop'>shop Now</button>
                 </div>
-               
+
                 
+               
             </section>
-            
+
+{/* ............................................................................................................................................ */}
+            <hr className='container mt-5' />
+            <section className='footer'>
+                <Footercomp></Footercomp>
+            </section>
+
+
             </div>
     );
 };

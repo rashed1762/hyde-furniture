@@ -1,0 +1,23 @@
+.crdstyle{
+    padding: 5px 5px;
+}
+.crdimg{
+    height: 380px;
+}
+
+
+@media screen and  (max-width:980px) {
+    .crdstyle{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+   
+.probtn{
+    width: 120px;
+}
+
+
+} 
+    

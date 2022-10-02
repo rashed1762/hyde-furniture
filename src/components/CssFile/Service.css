@@ -1,0 +1,96 @@
+.service{
+    background-image: url('/src//assests//servicebanner.jpg');
+    height: 420px;
+    width: 100%;
+  position: absolute;
+}
+.serviceh1{
+    position: relative;
+    color: rgb(255, 247, 231);
+    margin-top: 200px;
+    font-size: 50px;
+}
+.servicecat{
+    padding-top: 520px;
+    
+}
+.group{
+    padding: 10px 10px;
+    border: none;
+   
+}
+.sicon{
+    font-size: 50px;
+    padding: 30px 80px;
+    color: green;
+}
+.slasticon{
+    font-size: 50px;
+    padding: 30px 80px;
+    color: green;
+    text-align: s;
+}
+.crdbody{
+    position: absolute;
+    opacity: 0;
+    margin-top: 420px;
+    background-color: wheat;
+    color: rgb(12, 4, 4);
+    font-weight: bold;
+    height: 150px;
+   
+}
+.crdbody:hover{
+    opacity: 1;
+    transition: .7s;
+}
+.development{
+    background-color: antiquewhite;
+    height: 550px;
+    width: 100%;
+    margin-top: 90px;
+}
+.devpart{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.devicon{
+    margin: 5px 5px;
+}
+.dev{
+    background-color: white;
+    margin: 20px 20px;
+    width: 190px;
+    border-radius: 10px;
+}
+.sponsor:hover{
+    margin-top: 20px;
+    transition: .8s;
+    cursor: pointer;
+    display: fixed;
+
+}
+
+@media screen and  (max-width:980px) {
+    .iconpart2{
+        flex-direction: column;
+    }
+    .devimg{
+    width: 100%;
+}
+}
+
+@media screen and (max-width:768px) {
+   
+.iconpart2{
+    flex-direction: column;
+}
+.devimg{
+    width: 100%;
+}
+
+
+} 
+    
+
+

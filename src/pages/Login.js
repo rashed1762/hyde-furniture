@@ -36,28 +36,33 @@ const Login = () => {
     }
 
     return (
+        <div className='login'>
+
+        
         <div className='form-container'>
             <div>
                 <h2 className='form-title'>Login</h2>
-                <form onSubmit={handleUserSignIn}>
-                    <div className="input-group">
-                        <label htmlFor="email">Email</label>
-                        <input onBlur={handleEmailBlur} type="email" name="email" id="" required />
-                    </div>
-                    <div className="input-group">
-                        <label htmlFor="password">Password</label>
-                        <input onBlur={handlePasswordBlur} type="password" name="password" id="" required />
-                    </div>
+                <hr />
+                <form onSubmit={handleUserSignIn}>                 
+                        <h6>Email</h6>
+                        <input className='email' onBlur={handleEmailBlur} type="email" name="email" id="" required />
+                            <br />
+                            <br />
+                        <h6>Password</h6>
+                        <input className='pass' onBlur={handlePasswordBlur} type="password" name="password" id="" required />
+                   
                     <p style={{ color: 'red' }}>{error?.message}</p>
                     {
                         loading && <p>Loading...</p>
                     }
                     <input className='form-submit' type="submit" value="Login" />
                 </form>
+                <br />
                 <p>
                     New to Ema-John? <Link className='form-link' to="/signup">Create an account</Link>
                 </p>
             </div>
+        </div>
         </div>
     );
 };

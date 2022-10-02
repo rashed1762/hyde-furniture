@@ -1,0 +1,52 @@
+.contact{
+    background-image: url('/src//assests//servicebanner.jpg');
+    height: 230px;
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+    
+}
+contactstyle{
+    height: 20px;
+}
+
+.infostyle{
+    word-spacing: 30px;
+}
+.contact-part{
+    background-color: rgb(194, 116, 116);
+    width: 500px;
+    height: 500px;
+    margin-left: 200px;
+    box-shadow: 10px 10px 20px rgb(63, 108, 85);
+}
+.name{
+    width: 420px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.massage{
+    width: 420px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and  (max-width:980px) {
+    
+}
+
+@media screen and (max-width:768px) {
+   
+.contact-part{
+    width: 430px;
+}
+.name{
+    width: 100%;
+}
+.massage{
+    width: 100%;
+}
+
+
+} 

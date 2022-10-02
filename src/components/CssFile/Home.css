@@ -73,8 +73,21 @@
     margin-left: 20px;
 }
 .timershop{
-    height: 40px;
+    margin-left: 30px;
+    width:150px;
+    height: 50px;
+    border: none;
+    color: rgb(18, 2, 2);
     font-size: 20px;
+    background-color:rgb(243, 182, 248);
+   border-radius: 50px;
+   transition: ease-in-out 0.6s;
+   box-shadow: inset 100px 0px 0px 50px rgb(231, 187, 56) ;
+}
+.timershop:hover{
+    box-shadow: inset 0 0 0 0 rgb(112, 122, 112);
+    cursor: pointer;
+    color: black;
 }
 .discount{
     color: rgb(181, 5, 5);
@@ -86,9 +99,23 @@
     box-shadow: 10px 10px 20px rgb(177, 115, 244);
 }
 
+
 @media screen and  (max-width:980px) {
     .banner2img{
         width: 100%;
+    }
+    .discount{
+        display: none;
+        margin-right: 520px;
+    }
+    .timer{
+       display: none;
+        
+
+    }
+    .timerimg2{
+        width: 100%;
+        display: none;
     }
 }
 
@@ -102,6 +129,24 @@
     .banner2info{
         margin-left: 90px;
     }
+    .timerimg2{
+        width: 100%;
+        display: none;
+    }
+    .timer{
+        margin-right: 320px;
+        position: fixed;
+
+    }
+    .discount{
+        position: fixed;
+        margin-right: 520px;
+    }
+    .footer{
+        width: 100%;
+        
+    }
+    
 
 
 
